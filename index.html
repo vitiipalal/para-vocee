@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Para você, meu amor</title>
+<meta name="theme-color" content="#07051a">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="lock">
+
+<!-- Tela de abertura -->
+<div id="intro"><div class="h">♥</div><h1>Feito com amor<br>só para você</h1><button id="go">Toque para começar</button></div>
+<button id="mus">♪ Música</button>
+<!-- Modal do gatinho com poema (abre ao clicar em "Receber um beijo") -->
+<div id="kit">
+  <div class="card">
+    <img src="assets/gatinho.jpg" alt="Gatinho com uma rosa">
+    <div class="txt">
+      <h2 class="v" style="--i:0">Uma rosa para você 🌹</h2>
+      <p class="poem v" style="--i:1">Trouxe uma rosa pra te dizer<br>o que as palavras não sabem falar:<br>que o meu mundo só faz sentido<br>quando você está no meu olhar.</p>
+      <p class="poem v" style="--i:2">Cada pétala é um beijo,<br>cada perfume, uma canção,<br>mas nada é mais bonito que você,<br>nem a flor, nem a estação.</p>
+      <p class="poem v" style="--i:3">Se eu pudesse, te daria o céu,<br>mas só tenho este coração,<br>e ele, desde que te conheceu,<br>tem o seu nome como oração.</p>
+      <p class="poem v" style="--i:4">Com todo o meu amor ♥</p>
+      <button id="kitx" class="v" style="--i:5">Fechar</button>
+    </div>
+  </div>
+</div>
+<div id="egg"><div><h1>Você achou o segredo ♥</h1><p class="poem">Todo o meu coração já era seu<br>antes de você descobrir.<br><br>Obrigado por existir na minha vida.</p><button id="eggx" style="margin-top:2rem">Voltar</button></div></div>
+<!-- Cena 3D -->
+<canvas id="c"></canvas>
+
+<!-- Conteúdo que rola por cima da cena -->
+<main>
+<section><h1 class="fade">Para você,<br><span id="nm">meu amor</span></h1><p class="fade sub">Role devagar. Cada pedaço aqui foi pensado em você.</p><div class="hint">↓</div></section>
+
+<section><h2 class="fade">O seu sorriso</h2><p class="fade">O seu sorriso é a coisa mais linda que eu já vi. Ele acende o meu dia, faz o tempo desacelerar e deixa tudo ao redor mais leve.</p><p class="poem fade">Se o sol soubesse o que é nascer,<br>aprenderia com o teu sorriso.<br>Ele chega sem pedir licença<br>e faz do meu mundo um paraíso.</p></section>
+
+<section><h2 class="fade">Você é linda</h2><p class="fade">Linda de um jeito que não cabe em palavras. Linda quando está arrumada, linda quando acorda, linda quando ri, linda quando nem percebe que estou olhando.</p><p class="poem fade">Há beleza no que os olhos veem,<br>e há beleza no que a alma sente.<br>A tua, meu amor, é das duas:<br>encanta o olhar e aquece a gente.</p></section>
+
+<section><h2 class="fade">Cada detalhe</h2><p class="fade">Todos os seus detalhes são lindos, e eu me apaixono por eles um a um, todos os dias.</p><div class="words fade"><span>seu olhar</span><span>sua risada</span><span>seu jeito</span><span>sua voz</span><span>suas mãos</span><span>seu cheiro</span><span>seu abraço</span><span>sua alma</span></div><p class="poem fade">Teu olhar é meu poema favorito,<br>tua risada, a minha canção.<br>Cada detalhe teu é um verso<br>escrito direto no coração.</p></section>
+
+<section><h2 class="fade">Nossa história</h2>
+<div class="tl">
+<div class="it fade"><h3>O começo</h3><p>O dia em que o meu mundo ficou mais bonito: o dia em que eu te conheci.</p></div>
+<div class="it fade"><h3>O primeiro olhar</h3><p>Ali eu já sabia que havia algo diferente em você, algo que eu queria ter por perto.</p></div>
+<div class="it fade"><h3>O primeiro beijo</h3><p>O tempo parou e o resto do mundo sumiu. Só ficamos nós dois.</p></div>
+<div class="it fade"><h3>Nossos momentos</h3><p>Cada risada, cada passeio, cada conversa boba virou lembrança que eu guardo com carinho.</p></div>
+<div class="it fade"><h3>Hoje e sempre</h3><p>E a melhor parte é que a nossa história ainda está sendo escrita.</p></div>
+</div></section>
+
+<section><h2 class="fade">Motivos para te amar</h2><p class="fade">O céu está cheio de estrelas, e cada uma guarda um motivo. Toque nelas.</p>
+<div class="sky fade" id="sky"></div><div id="why">&nbsp;</div><div id="cnt">0 / 9 estrelas descobertas</div></section>
+
+<section><h1 class="fade">Eu te amo.</h1><p class="poem fade">Se eu pudesse escolher mil vidas,<br>em todas eu te procuraria.<br>E em cada uma delas, sem pensar,<br>de novo eu te amaria.</p><button id="b" class="fade">Receber um beijo 💋</button></section>
+</main>
+
+<!-- Biblioteca 3D -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+<!-- Lógica do site -->
+<script src="script.js"></script>
+</body>
+</html>
